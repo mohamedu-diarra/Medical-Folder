@@ -1,0 +1,1082 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Nooc1aad";
+  src: url(/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Nooc2aad";
+  src: url(/fonts/Poppins-Bold.ttf);
+}
+
+:root{
+    --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  
+}
+body{
+  position: relative;
+}
+
+
+
+.container{
+width: 100%;
+height: 100%;
+padding-left: 20px;
+padding-right: 20px;
+margin-left: auto;
+margin-right: auto;
+}
+
+div.navsection{
+  width: 100%;
+  height: 100%;
+  background-color: var(--light);
+ 
+
+    /* top: 0; */
+}
+
+div.navsection nav{
+  width: 100%;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 400px 2.5fr 1fr;
+  grid-template-rows: repeat(1, auto);
+  justify-content: center;
+  align-content: center;
+  background-color: var(--light);
+
+  
+}
+
+div.navsection nav div.logo{
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: nowrap row;
+  margin-left: 25px;
+  cursor: pointer;
+}
+div.navsection nav div.logo h2{
+  color: var(--dark);
+   font-family: "Nooc2aad";
+   line-height: 1.5;
+   font-size: 35px;
+}
+div.navsection nav div.logo h2 span{
+  color: var(--indigo);
+   font-family: "Nooc2aad";
+   line-height: 1.5;
+}
+div.navsection nav ul.links{
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: nowrap row;
+}
+div.navsection nav ul.links li{
+  margin: 15px;
+  list-style: none;
+}
+div.navsection nav ul.links li a{
+  text-decoration: none;
+  color: var(--indigo);
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Nooc1aad";
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+}
+div.navsection nav ul.links li a:hover{
+  color: var(--dark);
+ 
+
+}
+div.navsection nav div.action{
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap row;
+}
+div.navsection nav div.action button{
+  width: 120px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: var(--primary);
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-family: "Nooc1aad";
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+div.navsection nav div.action button i{
+  color: var(--light);
+  font-size: 18px;
+  margin: 0px 2px;
+  transition: all 0.5s ease-in-out;
+}
+
+div.navsection nav div.action button:hover{
+  background-color: var(--light);
+  border: solid 1px var(--indigo);
+  color: var(--dark);
+  margin-right: 10px;
+ 
+  
+}
+div.navsection nav div.action button a{
+  text-decoration: none;
+   font-family: "Nooc1aad";
+    color: var(--dark);
+}
+
+/* hero style */
+section.hero{
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+
+}
+section.hero div.herosec{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap column;
+  padding: 110px 0px;
+ 
+}
+section.hero div.herosec div.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+section.hero div.herosec div.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.4);
+}
+
+
+section.hero div.herosec h3.hero{
+ font-family: "Nooc2aad";
+ font-size: 20px;
+ font-weight: bolder;
+ text-transform: uppercase;
+ color: var(--light);
+}
+section.hero div.herosec h2.hero{
+  font-family: "Nooc2aad";
+ font-size: 75px;
+ font-weight: bolder;
+ text-transform: uppercase;
+ color: var(--light);
+}
+section.hero div.herosec h2.hero span{
+   font-family: "Nooc2aad";
+ font-size: 70px;
+ font-weight: bolder;
+ text-transform: uppercase;
+ color: var(--blue);
+}
+section.hero div.herosec div.btnhero button{
+  width: 200px;
+  height: 60px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--blue);
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-family: "Nooc1aad";
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  padding: 4px;
+
+}
+section.hero div.herosec div.btnhero button:hover{
+  background-color: var(--light);
+  border: solid 1px var(--indigo);
+  color: var(--dark);
+
+}
+
+
+/* program style */
+section.program{
+  width: 100%;
+  height: 100%;
+  background-color: var(--light);
+  padding: 10%;
+  
+}
+section.program div.choose_desc{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap column;
+}
+section.program div.choose_desc h2.choos{
+  font-family: "Nooc2aad";
+ font-size: 30px;
+ font-weight: bolder;
+ text-transform: uppercase;
+ color: var(--dark);
+ margin: 5px 0px;
+}
+section.program div.choose_desc h2.choos span{
+   font-family: "Nooc2aad";
+ font-size: 30px;
+ font-weight: bolder;
+ text-transform: uppercase;
+ color: var(--blue);
+}
+section.program div.choose_desc p.line {
+  margin: 10px 0px;
+}
+section.program div.choose_desc p.desc{
+  font-family: "Nooc1aad";
+  font-size: 16px;
+  color: var(--dark);
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 15px;
+}
+section.program div.parts{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10%;
+  margin-top: 60px;
+  padding: 10px 0px;
+
+}
+div.pop div.popup{
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(0px,-20px);
+  transition: all 0.6s ease-in-out;
+}
+div.pop.active{
+  width: 250px;
+  height: 50px;
+  background-color: #00000049;
+  color: var(--blue);
+  font-family: "Nooc2aad";
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  position: absolute;
+  z-index: 99;
+  backdrop-filter: blur(12px);
+    border-radius: 5px;
+        top: 15px;
+    right: 570px;
+    overflow: hidden;
+    opacity: 1;
+  transform: translate(0px,0px);
+   transition: all 1s ease-in-out;
+}
+div.msg{
+ display: none;
+ opacity: 0;
+  transform: translate(0px,-20px);
+  transition: all 0.6s ease-in-out;
+}
+div.pop.active div.msg{
+  background-color: #007bff;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  opacity: 1;
+  transform: translate(0px,0px);
+   transition: all 1s ease-in-out;
+  
+}
+div.pop.active div.msg p.prgrph{
+  font-size: 14px;
+  font-family:"Nooc1aad";
+}
+div.pop.active div.msg div.icon{
+  background-color: #f8f9fa;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+div.pop.active div.msg div.icon i{
+  color: var(--blue);
+}
+/* div.pop p.popup.active {
+  margin: 0px 3px;
+  visibility: visible;
+} */
+section.program div.parts div.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap row;
+  margin: 10px 0px;
+}
+section.program div.parts div.card div.desc{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: nowrap column;
+  margin: 0px 10px;
+}
+section.program div.parts div.card div.desc h3.title{
+  font-size: 18px;
+  font-family: "Nooc1aad";
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+section.program div.parts div.card div.desc p.cards_desc{
+  width: 430px;
+  font-size: 14px;
+  font-family: "Nooc1aad";
+  color: var(--gray);
+
+}
+section.program div.parts div.card div.desc p.cards_desc span{
+  color: var(--indigo);
+}
+section.program div.parts div.card div.desc p.discover {
+  font-size: 14px;
+  font-family: "Nooc1aad";
+  color: var(--indigo);
+  margin: 10px 0px;
+}
+section.program div.parts div.card div.desc p.discover a{
+  text-decoration: none;
+}
+ /* begin style */
+ section.begin{
+  width: 100%;
+  height: 100%;
+  background-image: url(/Images/cta-bg.jpg);
+ }
+  section.begin div.today{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: nowrap column;
+    padding: 10%;
+  }
+  section.begin div.today h2.hero{
+    font-family: "Nooc2aad";
+ font-size: 50px;
+ text-transform: uppercase;
+ color: var(--light);
+  }
+  section.begin div.today h2.hero span{
+    color: var(--indigo);
+  }
+  section.begin div.today p.today{
+    font-family: "Nooc1aad";
+    font-size: 16px;
+    text-align: center;
+    color: var(--light);
+    margin: 10px 0px;
+  }
+  section.begin div.today div.btnhero button{
+  width: 220px;
+  height: 60px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--blue);
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-family: "Nooc1aad";
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+}
+section.begin div.today div.btnhero button:hover{
+  background-color: var(--light);
+  border: solid 1px var(--indigo);
+  color: var(--dark);
+
+}
+
+/* classes section */
+section.classes{
+  width: 100%;
+  height: 100%;
+ background-color: var(--light);
+ padding: 10%;
+}
+section.classes div.choose_desc{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap column;
+  margin-bottom: 20px;
+}
+section.classes div.choose_desc h2.choos{
+  font-family: "Nooc2aad";
+ font-size: 30px;
+ font-weight: bolder;
+ text-transform: uppercase;
+ color: var(--dark);
+ margin-top: 40px;
+}
+section.classes div.choose_desc h2.choos span{
+   font-family: "Nooc2aad";
+ font-size: 30px;
+ font-weight: bolder;
+ text-transform: uppercase;
+ color: var(--blue);
+}
+section.classes div.choose_desc p.line {
+  margin: 10px 0px;
+}
+section.classes div.choose_desc p.desc{
+  font-family: "Nooc1aad";
+  font-size: 16px;
+  color: var(--dark);
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 15px;
+}
+
+section.classes div.parts{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+section.classes div.parts div.part{
+  width: calc(92% /2);
+  height: 100%;
+  margin: 10px 20px;
+}
+section.classes div.parts div.part.right {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap column;
+}
+section.classes div.parts div.part.right div.class{
+  width: 80%;
+  height: 90px;
+  background-color: var(--light);
+  box-shadow: 0px 0px 15px -8px var(--secondary)  ;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: nowrap row; 
+  margin: 20px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+section.classes div.parts div.part.right div.class p{
+  margin-left: 15px;
+}
+section.classes div.parts div.part.right div.class h3{
+  font-family: "Nooc1aad";
+  font-size: 20px;
+  margin-left: 20px;
+  color: var(--dark);
+  text-transform: capitalize;
+}
+section.classes div.parts div.part.right div.btn button{
+ width: 390px;
+  height: 80px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--blue);
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-family: "Nooc1aad";
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+section.classes div.parts div.part.left {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap column;
+}
+section.classes div.parts div.part.left div.sawir {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+section.classes div.parts div.part.left div.sawir img{
+  width: 100%;
+  height: 400px;
+  border-radius: 3px;
+}
+section.classes div.parts div.part.left div.sawir_desc{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: nowrap column;
+}
+section.classes div.parts div.part.left div.sawir_desc h2{
+  font-family: "Nooc2aad";
+  line-height: 47px;
+  font-size: 25px;
+  margin-left: 20px;
+  color: var(--dark);
+  text-transform: capitalize;
+  margin: 10px 0px;
+}
+section.classes div.parts div.part.left div.sawir_desc p{
+  font-family: "Nooc1aad";
+  font-size: 16px;
+  color: var(--dark);
+  text-transform: capitalize;
+  margin: 10px 0px;
+
+}
+section.classes div.parts div.part.left div.sawir_desc div.btnswir button{
+ width: 180px;
+  height: 60px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--blue);
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-family: "Nooc1aad";
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+section.classes div.parts div.part.left div.sawir_desc div.btnswir button:hover{
+  background-color: var(--light);
+  border: solid 1px var(--indigo);
+  color: var(--dark);
+}
+/* shecdule section */
+section.Schedule{
+  width:100%;
+  height:100%;
+  padding: 15%;
+  background-image: url(/Images/schedule-bg.jpg);
+  
+
+  
+}
+section.Schedule div.qaybweyn{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap column;
+}
+section.Schedule div.qaybweyn div.classes_desc{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap column;
+}
+section.Schedule div.qaybweyn div.classes_desc h2{
+   font-family: "Nooc2aad";
+ font-size: 30px;
+ font-weight: bolder;
+ text-transform: uppercase;
+ color: var(--white);
+ margin: 10px 0px;
+}
+section.Schedule div.qaybweyn div.classes_desc h2 span{
+   font-family: "Nooc2aad";
+ font-size: 30px;
+ font-weight: bolder;
+ text-transform: uppercase;
+ color: var(--blue);
+}
+section.Schedule div.qaybweyn div.classes_desc p{
+  width: 600px;
+  font-size: 16px;
+  color: var(--light);
+  text-align: center;
+  font-family: "Nooc1aad";
+  margin-bottom: 20px;
+}
+section.Schedule div.qaybweyn div.classes_desc p.days{
+  margin-top: 40px;
+}
+section.Schedule div.qaybweyn div.classes_desc p.days span{
+  color: var(--indigo);
+}
+
+section.Schedule div.qaybweyn div.classes_desc table{
+  width: 100%;
+  padding: 10px;
+  border: solid 1px var(--light);
+  border-collapse: collapse;
+  margin: 20px 0px;
+}
+section.Schedule div.qaybweyn div.classes_desc table tr td{
+  padding: 4%;
+  color: var(--light);
+  border: solid 1px var(--light);
+  font-family: "Nooc1aad";
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+/* expert style */
+section.trainers{
+  width: 100%;
+  height: 100%;
+  background-color: var(--light);
+  padding: 10%;
+}
+section.trainers div.expert_trainers{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap column;
+}
+section.trainers div.expert_trainers h2{
+  font-family: "Nooc2aad";
+ font-size: 30px;
+ font-weight: bolder;
+ text-transform: uppercase;
+ color: var(--dark);
+ margin-top: 40px;
+}
+section.trainers div.expert_trainers h2 span{
+   font-family: "Nooc2aad";
+ font-size: 30px;
+ font-weight: bolder;
+ text-transform: uppercase;
+ color: var(--blue);
+}
+section.trainers div.expert_trainers p {
+  margin: 10px 0px;
+}
+section.trainers div.expert_trainers p{
+  font-family: "Nooc1aad";
+  font-size: 16px;
+  color: var(--dark);
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 15px;
+}
+section.trainers div.expert_trainers div.cards{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  grid-template-rows: repeat(1, auto);
+  gap: 5%;
+  justify-content: center;
+  align-content: center;
+  margin-top: 5%;
+}
+section.trainers div.expert_trainers div.cards div.card{
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: nowrap column;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: 0px 0px 15px -8px var(--secondary);
+}
+section.trainers div.expert_trainers div.cards div.card div.image{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.trainers div.expert_trainers div.cards div.card div.image img{
+  width: 80%;
+  height: 70%;
+  border-radius: 5px;
+
+}
+section.trainers div.expert_trainers div.cards div.card div.card_details{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: nowrap column;
+  margin-left: 20px;
+}
+section.trainers div.expert_trainers div.cards div.card div.card_details span{
+  color: var(--indigo);
+  font-family: "Nooc1aad";
+  font-size: 14px;
+  margin: 5px 0px;
+}
+section.trainers div.expert_trainers div.cards div.card div.card_details h3{
+  font-family: "Nooc1aad";
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+section.trainers div.expert_trainers div.cards div.card div.card_details p{
+  font-family: "Nooc1aad";
+  font-size: 14px;
+  text-align: left;
+}
+section.trainers div.expert_trainers div.cards div.card div.card_details div.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap row;
+  
+}
+section.trainers div.expert_trainers div.cards div.card div.card_details div.icons i{
+  margin: 7px;
+  color: var(--dark);
+  font-size: 14px;
+  cursor: pointer;
+
+}
+section.trainers div.expert_trainers div.cards div.card div.card_details div.icons i:hover{
+  color: var(--blue);
+}
+section.trainers div.expert_trainers div.qaybo{
+  width: calc(92% /2);
+  padding: 20px;
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  grid-template-rows: repeat(1, auto);
+  gap: 40%;
+  justify-content: center;
+  align-content: space-around;
+
+}
+
+section.trainers div.expert_trainers div.qaybo div.qayb{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap row;
+
+  
+}
+section.trainers div.expert_trainers div.qaybo div.qayb.map{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.trainers div.expert_trainers div.qaybo div.qayb.text{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap column;
+  
+}
+section.trainers div.expert_trainers div.qaybo div.qayb.text form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap row;
+}
+section.trainers div.expert_trainers div.qaybo div.qayb.text form input.one{
+  width: 200px;
+  height: 45px;
+  padding: 10px;
+  margin: 10px 0px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: wrap row;
+  display: inline-block;
+  font-family: "Nooc1aad";
+  padding: 10px;
+  outline: none;
+  border: none;
+  border: 1px solid var(--secondary) ;
+  margin-bottom: 38%;
+  margin-left: -4%;
+}
+section.trainers div.expert_trainers div.qaybo div.qayb.text form input.one:nth-child(2){
+  margin-left: 10px;
+}
+section.trainers div.expert_trainers div.qaybo div.qayb.text form input.subject{
+  width: 400px;
+  height: 45px;
+  padding: 10px;
+  margin-top: -60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: wrap row;
+  font-family: "Nooc1aad";
+  margin-left:-10% ;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border: 1px solid var(--gray);
+}
+section.trainers div.expert_trainers div.qaybo div.qayb.text form textarea{
+  width: 450px;
+  height: 200px;
+  padding: 15px;
+  margin-top: -20%;
+  font-family: "Nooc1aad";
+
+}
+
+/* footer */
+footer{
+  width: 100%;
+  height: 100%;
+  background-color: var(--light);
+}
+footer div.footer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4%;
+
+}
+footer div.footer p{
+  font-family: "Nooc1aad";
+  font-size: 14px;
+  color: var(--dark);
+}
+footer div.footer p a{
+  text-decoration: none;
+}
+
+
+
+  
+
+ 
+
+
+
+
+
+/* xsmall screen */
+/* Extra Small Devices (phones) */
+@media (max-width: 575px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  nav {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+  }
+
+  div.navsection nav ul.links,
+  div.navsection nav div.action {
+    display: none;
+  }
+
+  section.hero div.herosec h2.hero {
+    font-size: 35px;
+  }
+
+  section.program div.parts,
+  section.trainers div.expert_trainers div.cards {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  section.classes div.parts {
+    flex-direction: column;
+  }
+
+  section.classes div.parts div.part {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  section.Schedule div.qaybweyn div.classes_desc p {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  section.Schedule div.qaybweyn div.classes_desc table tr td {
+    font-size: 12px;
+  }
+
+  section.trainers div.expert_trainers div.qaybo {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  section.trainers div.expert_trainers div.qaybo div.qayb.text form input.one,
+  section.trainers div.expert_trainers div.qaybo div.qayb.text form input.subject,
+  section.trainers div.expert_trainers div.qaybo div.qayb.text form textarea {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+/* Small Devices (landscape phones, tablets) */
+@media (min-width: 576px) and (max-width: 767px) {
+  nav {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+
+  div.navsection nav ul.links {
+    display: none;
+  }
+
+  section.program div.parts,
+  section.trainers div.expert_trainers div.cards {
+    grid-template-columns: 1fr;
+  }
+
+  section.classes div.parts {
+    flex-direction: column;
+  }
+
+  section.trainers div.expert_trainers div.qaybo {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Medium Devices (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+
+  nav {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section.trainers div.expert_trainers div.cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  section.trainers div.expert_trainers div.qaybo {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Large Devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+
+  section.trainers div.expert_trainers div.cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Extra Large Devices */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  section.trainers div.expert_trainers div.cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
