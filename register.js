@@ -77,9 +77,4 @@ btn.addEventListener("click", () => {
 
 
 
-const age = 18;
- if(age < 20){
-   console.log("welcome")
- }else{
-   console.log("get out of here")
- }
+
