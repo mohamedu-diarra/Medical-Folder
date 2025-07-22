@@ -25,4 +25,10 @@ call.addEventListener("click", ()=>{
     }
 })
 
+const temp = 30;
+if (temp === 30){
+    console.log("heerkulku wa kulayl")
+}else{
+    console.log("heerkul saxan geli")
+}
 
