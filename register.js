@@ -7,6 +7,7 @@ const btn = document.querySelector("button")
 
 
 
+
 inputname.addEventListener("input", function(){
    if(inputname.value.length<3){
     text.classList.add("active")
